@@ -1,0 +1,157 @@
+/*html{
+	margin: 0 auto;
+}*/
+@font-face{
+	font-family: "custom";
+	src:  url("C:/Users/Ансар/Desktop/Assignment 2/FuturaEFLight.ttf");
+}
+body{
+	margin: 0 auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+ul{
+	list-style-type: none;
+	marign: 0px;
+	padding: 0px;
+}
+a, span, .custom-font{
+	font-family: "custom";
+	font-size: 22px;
+	text-decoration: none;
+	color: #5d4540;
+}
+h1 {
+	font-family: "custom";
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+.heading {
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	height: 110px;
+	flex-direction: row;
+	-webkit-box-shadow: 0px 6px 20px 5px rgba(118, 92, 40, 0.2);
+	-moz-box-shadow: 0px 6px 20px 5px rgba(118, 92, 40, 0.2);
+	box-shadow: 0px 6px 20px 5px rgba(118, 92, 40, 0.2);
+	z-index: 5;
+}
+.wrap{
+	margin: 0 auto;
+}
+.footer-font{
+	font-family: "custom";
+	font-size: 22px;
+	text-decoration: none;
+	color: white;
+}
+.navigation-items {
+	display: flex;
+	list-style: none;
+	width: 100%;
+}
+.navigation {
+	display: flex;
+	width: 100vw;
+	flex-direction: row; 
+	font-family: sans-serif;
+	align-items: center;
+	transition: 0.3s;
+	background-color: white;
+	opacity: 0.9;
+	color: white;
+}
+.navigation:hover {
+	background-color: white;
+	transition: 0.3s;
+	opacity: 1;
+}
+.logo img{
+	width: 200px;
+	height: 80px;
+	margin-right: 200px;
+}
+.navigation-items li {
+	width: 180px;
+	padding: 25px;
+}
+.navbar-items li:first-child {
+	width: 120px;
+}
+.banner {
+	padding-top: 110px;
+	text-align: center;
+}
+.banner img{
+	width: 90vw;
+}
+.line{
+	width: 200px;
+	transform: rotate(90deg);
+}
+.open{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+	margin-top: 150px;
+}
+.slider{
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.uls{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.slide-img{
+	width: 480px;
+}
+.uls li{
+	perspective: 700px;
+}
+#first-slider{
+	transform: rotateX(360deg) rotateY(331deg) scale(0.80);;
+	transform-style: preserve-3d;
+}
+#second-slider{
+	transform: rotateX(360deg) rotateY(29deg) scale(0.80);;
+	transform-style: preserve-3d;
+}
+footer{
+	margin: 0 auto;
+	background-color: #5d4540;
+	padding: 7px;
+	width: 100%;
+}
+.footer-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 10px 0 10px;
+}
+.footer-wrapper div{
+	width: 300px;
+}
+.footer-columns{
+	max-width: 100%;
+	max-height: auto;
+}
+.arrow-img {
+	width: 35px;
+	height: 35px;
+}
+#right-arrow {
+	transform: rotate(180deg);
+}
+
+
