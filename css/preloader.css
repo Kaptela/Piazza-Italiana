@@ -1,0 +1,30 @@
+.tigid-preloader{
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f8f6;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.tigid-preloader.hidden{
+    opacity: 0;
+}
+
+.tigid-preloader__logo{
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: -75px;
+    background-image: url(../logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.2s;
+}

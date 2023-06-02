@@ -1,0 +1,27 @@
+.gallery-item {
+	position: relative;
+	max-width: 800px;
+	background-color: #fff;
+}
+.gallery-item img {
+	max-width: 100%;
+	height: auto;
+}
+.gallery {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+@media (max-width: 530px) {
+	.gallery-item {
+		max-width: 350px;
+	}
+}

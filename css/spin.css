@@ -1,0 +1,124 @@
+.contain {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 0vh;
+}
+ .wheel-popup {
+     position: relative;
+     width: 400px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .spinner {
+     position: absolute;
+     width: 60px;
+     height: 60px;
+     background: #fff;
+     border-radius: 50%;
+     z-index: 10;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-transform: uppercase;
+     font-weight: 600;
+     color: #333;
+     letter-spacing: 0.1em;
+     border: 4px solid rgba(0,0, 0, 0.75);
+     cursor: pointer;
+     user-select: none;
+}
+ .spinner::before {
+     content: '';
+     position: absolute;
+     top: -28px;
+     width: 20px;
+     height: 30px;
+     background: #fff;
+     clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+ .wheel {
+     position: relative;
+     top: 0px;
+     left: 0px;
+     width: 500px;
+     height: 500px;
+     background: #333;
+     border-radius: 50%;
+     overflow: hidden;
+     box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+     transition: transform 5s ease-in-out;
+}
+ .wheel .number {
+     position: absolute;
+     width: 50%;
+     height: 50%;
+     background: var(--clr);
+     transform-origin: bottom right;
+     transform: rotate(calc(45deg*var(--i)));
+     clip-path: polygon(0 0, 56% 0, 100% 100%,0 56%);
+     display: flex;
+     justify-content: center;
+     align-items:center ;
+     user-select: none;
+     cursor: pointer;
+}
+ .wheel .number span {
+     position: relative;
+     transition: rotate(45deg);
+     font-size: 2em;
+     font-weight: 700;
+     color: #fff;
+     text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+ .wheel .number span::after {
+     position: absolute;
+     font-size: 0.75em;
+     font-weight: 500;
+}
+ .reservation {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 20px;
+     z-index: 9999;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ .reservation-button {
+     display: block;
+     margin: 0 auto;
+     background-color: #DEB887;
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     cursor: pointer;
+}
+ .reservation.show {
+     display: block;
+}
+ .close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     font-size: 20px;
+     color: #999;
+}
+ .reservation {
+     text-align: center;
+}
+ .spinner {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+}
+ 

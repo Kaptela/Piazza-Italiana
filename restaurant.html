@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Photo Gallery | Piazza Italiana Restaurant</title>
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+  <link rel="stylesheet" type="text/css" href="css/preloader.css">
+  <script src="js/preloader.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .mini-photos img {
+      margin: 20px 00 20px;
+    }
+    
+    .button {
+      padding: 10px 20px;
+      background-color: #5d4540;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 auto;
+      display: block;
+      width: 150px;
+    }
+    
+    .slider {
+      padding-top: 150px;
+    }
+    a.button:active,
+    a.button:hover, 
+    a.button {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main custom-font" id="shop-app">
+    <div class="site-menu">
+      <div>
+        <a class="site-menu-full-logo" href="index.html"><img alt="full-logo" src="logo.svg" /></a>
+        <div class="site-menu-grid">
+          <nav class="menu">
+            <div class="">
+              <a href="index.html" class="">Home</a>
+            </div>
+
+            <div class="subMenuItem">
+              <a href="menus.html" class="">Menus</a>
+              <div class="subMenu">
+                <div>
+                  <a href="menus\first-menu.pdf" target="_blank">
+              Lunch Offer £28 / £32           </a>
+                </div>
+                <div>
+                  <a href="menus\second-menu.pdf" target="_blank">
+              Lunch menu            </a>
+                </div>
+                <div>
+                  <a href="menus\third-menu.pdf" target="_blank">
+              Dinner menu           </a>
+                </div>
+                <div>
+                  <a href="menus\fourth-menu.pdf" target="_blank">
+              Kids Menu           </a>
+                </div>
+                <div>
+                  <a href="menus\fifth-menu.pdf" target="_blank">
+              Wine List           </a>
+                </div>
+                <div>
+                  <a href="menus\sixth-menu.pdf" target="_blank">
+              Bar List            </a>
+                </div>
+                <div>
+                <a href="promotion.html" target="_blank">
+              Promotions            </a>
+              </div>
+            </div>
+        </div>
+        <div class="">
+          <a href="gallery.html" class="">Gallery</a>
+        </div>
+        <div class="">
+          <a href="about us.html" class="">About us</a>
+        </div>
+        </nav>
+        <div class="site-menu-image">
+          <div class="image-border">
+            <img alt="menu-image" src="main/secondary-image.jpg" />
+          </div>
+        </div>
+      </div>
+      <a class="site-menu-close">close <img alt="menu-close" src="main/close.svg"  /></a>
+    </div>
+  </div>
+  <div class="header header-full">
+    <div class="header-for-logo">
+      <a class="header-full-logo" href="index.html"><img alt="full-logo" src="logo.svg" /></a>
+      <a class="header-logo" href="index.html"><img alt="lim-logo" src="logo2.svg" /></a>
+    </div>
+    <div class="header-for-menu">
+      <a class="header-phone" href="tel:+7 778 453 78 59">
+          +7 778 453 78 59
+        </a>
+      <div class="header-menu">
+        <nav class="menu">
+          <div class="">
+            <a href="index.html" class="">Home</a>
+          </div>
+          <div class="subMenuItem">
+            <a href="menus.html" class="">Menus</a>
+            <div class="subMenu">
+              <div>
+                <a href="menus\first-menu.pdf" target="_blank">
+              Lunch Offer £28 / £32           </a>
+              </div>
+              <div>
+                <a href="menus\second-menu.pdf" target="_blank">
+              lunch menu            </a>
+              </div>
+              <div>
+                <a href="menus\third-menu.pdf" target="_blank">
+              dinner menu           </a>
+              </div>
+              <div>
+                <a href="menus\fourth-menu.pdf" target="_blank">
+              Kids Menu           </a>
+              </div>
+              <div>
+                <a href="menus\fifth-menu.pdf" target="_blank">
+              Wine List           </a>
+              </div>
+              <div>
+                <a href="menus\sixth-menu.pdf" target="_blank">
+              Bar List            </a>
+              </div>
+              <div>
+                <a href="promotion.html" target="_blank">
+              Promotions            </a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="gallery.html" class="">Gallery</a>
+          </div>
+          <div class="">
+            <a href="about us.html" class="">About us</a>
+          </div>
+        </nav>
+      </div>
+      <a class="menu-link">
+        <div></div>
+        <div></div>
+      </a>
+    </div>
+  </div>
+  </div>
+  <p class="slider" align="center"><img name="slide" width="1200" height="800"></p>
+  <br>
+  <section class="mini-photos col-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto1.jpg" alt="Mini Photo 9" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto2.jpg" alt="Mini Photo 10" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto3.jpg" alt="Mini Photo 11" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto4.jpg" alt="Mini Photo 12" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto5.jpg" alt="Mini Photo 13" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto6.jpg" alt="Mini Photo 14" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto7.jpg" alt="Mini Photo 15" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto8.jpg" alt="Mini Photo 16" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto9.jpg" alt="Mini Photo 21" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto10.jpg" alt="Mini Photo 22" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto11.jpg" alt="Mini Photo 23" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="gallery/restaurantphoto12.jpg" alt="Mini Photo 24" class="img-fluid">
+        </div>
+        <br>
+
+      </div>
+
+    </div>
+    <div style="padding-bottom: 50px;">
+      <a href="gallery.html" class="button">Previous Page</a>
+    </div>
+  </section>
+  <script src="js/smooth.js"></script>
+  <script>
+    let i = 0;
+    let images = [];
+    let time = 3000;
+    images[0] = 'gallery/restaurantphoto1.jpg';
+    images[1] = 'gallery/restaurantphoto2.jpg';
+    images[2] = 'gallery/restaurantphoto3.jpg';
+    images[3] = 'gallery/restaurantphoto4.jpg';
+    images[4] = 'gallery/restaurantphoto5.jpg';
+    images[5] = 'gallery/restaurantphoto6.jpg';
+    images[6] = 'gallery/restaurantphoto7.jpg';
+    images[7] = 'gallery/restaurantphoto8.jpg';
+    images[8] = 'gallery/restaurantphoto9.jpg';
+    images[9] = 'gallery/restaurantphoto10.jpg';
+    images[10] = 'gallery/restaurantphoto11.jpg';
+    images[11] = 'gallery/restaurantphoto12.jpg';
+
+    function changeImg() {
+      document.slide.src = images[i];
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+    $(document).ready(function() {
+      $(".mini-photos img").hide().fadeIn(5000);
+    });
+  </script>
+  <div class="footer footer-font">
+
+    <div class="footer-info">
+
+      <div class="footer-info-item">
+        <div class="title">Address</div>
+        <p>60a/13 Kabanbai Batyra Street
+          <br /> Astana
+          <br /> Kazakhstan</p>
+      </div>
+
+      <div class="footer-info-item">
+        <div class="title">Hours</div>
+        <p><strong>Opening Hours:</strong>
+          <br /> Monday - Wednesday:
+          <br /> 12pm - 10pm
+          <br /> Thursday - Friday:
+          <br /> 12pm - 11pm
+          <br /> Saturday:
+          <br /> 6pm - 11pm
+          <br /> Sunday:
+          <br /> Closed
+          <br />
+          <br /> *last kitchen order - 9:45pm</p>
+      </div>
+
+      <div class="footer-info-item">
+        <div class="title">Reservation</div>
+        <p>E: <a href="">piazzaitaliana@gmail.com</a>
+          <br /> T: +7 778 453 78 59</p>
+      </div>
+
+    </div>
+
+    <div class="footer-subscrybe">
+      <div class="title">Stay in touch</div>
+      <form class="for-input-newsletter">
+        <input type="email" placeholder="Sign up for our Newsletter" required />
+        <button type="submit" id="subscrybe-button">Ok</button>
+      </form>
+    </div>
+    <div class="footer-copyright">
+      <div>© 2023 Piazza Italiana</div>
+      <div class="covid">
+        <p>For all media and PR enquiries please email <a href="">marketingpiazzaitaliana.gmail.com</a>
+          <br /> To see the copy of our Covid Risk Assessment please&nbsp;email <a href="" target="_blank">piazzaitaliana@gmail.com</a>
+          <br /> Booking terms and conditions can be found <a href="">here</a>.&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
